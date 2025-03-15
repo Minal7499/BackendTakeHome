@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "backendtakehome"
+version = "0.1.0"
+description = ""
+authors = ["Minal Bhaisare <minalbhaisare68@gmail.com>"]
+readme = "README.md"
+
+# ✅ Move packages inside [tool.poetry]
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"  # Match your actual Python version
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "src.cli:get_papers_list"
