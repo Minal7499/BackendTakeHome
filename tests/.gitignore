@@ -1,0 +1,22 @@
+# Ignore virtual environment
+.env
+venv/
+.poetry/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Poetry lock file (optional)
+poetry.lock
+
+# Ignore test and log files
+tests/.pytest_cache/
+logs/
+*.log
+
+# Ignore IDE files
+.idea/
+.vscode/

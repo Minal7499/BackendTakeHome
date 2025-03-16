@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "backendtakehome"
+name = "backendtakehome-unique"
 version = "0.1.0"
 description = ""
 authors = ["Minal Bhaisare <minalbhaisare68@gmail.com>"]
