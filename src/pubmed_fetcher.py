@@ -14,7 +14,12 @@ def fetch_pubmed_papers(query: str, max_results: int = 10) -> List[Dict[str, str
     root = ET.fromstring(response.text)
     paper_ids = [id_elem.text for id_elem in root.findall(".//Id")]
 
-    return get_paper_details(paper_ids)
+    papers = get_paper_details(paper_ids)
+
+    print("Fetched Papers:", papers)
+
+    return papers
+
 
 def get_paper_details(paper_ids: List[str]) -> List[Dict[str, str]]:
     """Retrieve paper details using PubMed IDs."""
